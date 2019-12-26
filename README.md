@@ -4,6 +4,7 @@ Convert an xlsx file to a json file that can be imported as a wekan board.
 
 ## Usage
 
+```
 usage: xlsx_to_wekan.py [-h] [--card_title_col CARD_TITLE_COL]
                          [--card_description_col CARD_DESCRIPTION_COL]
                          [--sheet_index SHEET_INDEX]
@@ -27,6 +28,7 @@ optional arguments:
                         first row that contains task data
   --last_data_row LAST_DATA_ROW
                         last row that contains task data
+```
 
 ## Example
 
