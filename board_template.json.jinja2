@@ -1,0 +1,174 @@
+{
+    "_format": "wekan-board-1.0.0",
+    "_id": "zmLJKxnykC9vQEwQM",
+    "actions": [],
+    "activities": [],
+    "allowsSubtasks": true,
+    "archived": false,
+    "attachments": [],
+    "cards": [
+        {% for card in cards %}
+        {
+            "_id": "{{card.id}}",
+            "archived": false,
+            "assignedBy": "",
+            "assignees": [],
+            "coverId": "",
+            "createdAt": "{{board.date}}",
+            "customFields": [],
+            "dateLastActivity": "{{board.date}}",
+            "description": "{{card.description}}",
+            "isOvertime": false,
+            "labelIds": [],
+            "linkedId": "",
+            "listId": "d6w6YiYvk7CMfEmnq",
+            "members": [],
+            "modifiedAt": "{{board.date}}",
+            "parentId": "",
+            "requestedBy": "",
+            "sort": 0,
+            "spentTime": 0,
+            "subtaskSort": -1,
+            "swimlaneId": "Y3tcRjqsoQPiipis7",
+            "title": "{{card.title}}",
+            "type": "cardType-card",
+            "userId": "SyuNQNygfut3my5vg"
+        }
+        {% if not loop.last %}
+        ,
+        {% endif %}
+        {% endfor %}
+    ],
+
+    "checklistItems": [],
+    "checklists": [],
+    "color": "belize",
+    "comments": [],
+    "createdAt": "{{board.date}}",
+    "customFields": [],
+    "isOvertime": false,
+    "labels": [
+        {
+            "_id": "JNXqYQ",
+            "color": "green",
+            "name": ""
+        },
+        {
+            "_id": "PYaLhR",
+            "color": "yellow",
+            "name": ""
+        },
+        {
+            "_id": "nXbriH",
+            "color": "orange",
+            "name": ""
+        },
+        {
+            "_id": "iztE8M",
+            "color": "red",
+            "name": ""
+        },
+        {
+            "_id": "BwooKZ",
+            "color": "purple",
+            "name": ""
+        },
+        {
+            "_id": "HNSqTM",
+            "color": "blue",
+            "name": ""
+        }
+    ],
+    "lists": [
+        {
+            "_id": "6T7REM6wDsgqQCM7c",
+            "archived": false,
+            "createdAt": "{{board.date}}",
+            "modifiedAt": "{{board.date}}",
+            "sort": 1,
+            "starred": false,
+            "swimlaneId":"Y3tcRjqsoQPiipis7",
+            "title": "TODO",
+            "type": "list",
+            "updatedAt": "{{board.date}}",
+            "wipLimit": {
+                "enabled": false,
+                "soft": false,
+                "value": 1
+            }
+        },
+        {
+            "_id": "d6w6YiYvk7CMfEmnq",
+            "archived": false,
+            "createdAt": "{{board.date}}",
+            "modifiedAt": "{{board.date}}",
+            "sort": 2,
+            "starred": false,
+            "swimlaneId": "Y3tcRjqsoQPiipis7",
+            "title": "IN PROGRESS",
+            "type": "list",
+            "updatedAt": "{{board.date}}",
+            "wipLimit": {
+                "enabled": false,
+                "soft": false,
+                "value": 1
+            }
+        },
+        {
+            "_id": "CxxWXPiJvuH2HoN4Z",
+            "archived": false,
+            "createdAt": "{{board.date}}",
+            "modifiedAt": "{{board.date}}",
+            "sort": 3,
+            "starred": false,
+            "swimlaneId": "Y3tcRjqsoQPiipis7",
+            "title": "DONE",
+            "type": "list",
+            "updatedAt": "{{board.date}}",
+            "wipLimit": {
+                "enabled": false,
+                "soft": false,
+                "value": 1
+            }
+        }
+    ],
+    "members": [
+        {
+            "isActive": true,
+            "isAdmin": true,
+            "isCommentOnly": false,
+            "isNoComments": false,
+            "userId": "SyuNQNygfut3my5vg"
+        }
+    ],
+    "modifiedAt": "{{board.date}}",
+    "permission": "public",
+    "presentParentTask": "no-parent",
+    "rules": [],
+    "slug": "test",
+    "subtaskItems": [],
+    "subtasksDefaultBoardId": null,
+    "subtasksDefaultListId": null,
+    "swimlanes": [
+        {
+            "_id": "Y3tcRjqsoQPiipis7",
+            "archived": false,
+            "createdAt": "{{board.date}}",
+            "modifiedAt": "{{board.date}}",
+            "sort": 0,
+            "title": "Default",
+            "type": "swimlane",
+            "updatedAt": "{{board.date}}"
+        }
+],
+    "title": "{{board.title}}",
+    "triggers": [],
+    "type": "board",
+    "users": [
+        {
+            "_id": "SyuNQNygfut3my5vg",
+            "profile": {},
+            "username": "foo"
+        }
+    ]
+}
